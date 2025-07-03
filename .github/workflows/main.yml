@@ -22,7 +22,10 @@ jobs:
     - uses: hashicorp/setup-terraform@v3
 
     - name: terraform init
-      run: cd gcp/sample && ./plan.sh
+      run: terraform init
     
     - name: terraform plan
-      run: cd gcp/sample && ./apply.sh
+      run: terraform plan
+
+    - name: terraform apply
+      run: terraform apply
