@@ -1,5 +1,5 @@
 provider "google"  {
-    projec = "white-resolver-460502-v9"
+    project = "white-resolver-460502-v9"
 }
 resource "google_storage_bucket" "my-bucketsss" {
   name          = "bkt-demo-00047889"
